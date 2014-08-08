@@ -40,7 +40,7 @@ namespace RestFulNetDroid.Controllers
         }  */
 
         // GET: api/TreasuresDto/5
-        [ResponseType(typeof(Treasure))]
+        [ResponseType(typeof(TreasureDto))]
         public async Task<IHttpActionResult> GetGerbilDto(string id)
         {
             Treasure treasure = await db.Treasures.Include(c => c.Coordinates).SingleOrDefaultAsync(p => p.Id == id);
@@ -49,8 +49,11 @@ namespace RestFulNetDroid.Controllers
             {
                 return NotFound();
             } 
-         //   var treasureDto = new TreasureDto();
-            return Ok(treasure);
+            var treasureDto = new TreasureDto(treasure);
+        
+            
+
+            return Ok(treasureDto);
         }
 
 

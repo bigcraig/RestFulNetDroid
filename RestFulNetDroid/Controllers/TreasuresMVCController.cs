@@ -27,7 +27,7 @@ namespace RestFulNetDroid.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Treasure treasure = db.Treasures.Find(id);
+            Treasure treasure = db.Treasures.Find(id); 
             if (treasure == null)
             {
                 return HttpNotFound();
