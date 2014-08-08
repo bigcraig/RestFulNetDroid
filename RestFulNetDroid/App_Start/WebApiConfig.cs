@@ -19,7 +19,7 @@ namespace RestFulNetDroid
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html")); //forces all text/html requests to Json
             config.Formatters.JsonFormatter.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None; //tells json not to return ref Ids $id
-            // test github intergration
+            // test github integration
             // Web API routes
             config.MapHttpAttributeRoutes();
 
