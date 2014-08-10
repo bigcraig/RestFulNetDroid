@@ -29,7 +29,7 @@ namespace RestFulNetDroid.Models
             coordinates = new List<double>();
             foreach (var data in Coordinates)
 
-                coordinates.Add(data.Data);   //populate wit the double value
+                coordinates.Add(data.Data);   //populate with the double value
         }
 
             // need lamda to form a list of doubles from coordinate data

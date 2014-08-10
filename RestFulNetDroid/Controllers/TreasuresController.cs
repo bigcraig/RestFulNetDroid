@@ -18,12 +18,18 @@ namespace RestFulNetDroid.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: api/Treasures
-        public IQueryable<Treasure> GetTreasures()
+        public List<TreasureDto> GetTreasures()
         {
-            return db.Treasures.Include(c => c.Coordinates);
+            var treasures =  db.Treasures.Include(c => c.Coordinates);
+            var treasuresdto = new List<TreasureDto>();
            //  return db.Treasures;
 
-
+            foreach (var treasure in treasures)
+            {
+               var treasuredto = new TreasureDto(treasure);
+               treasuresdto.Add(treasuredto);
+            }
+            return (treasuresdto);
         }
 
         // GET: api/Treasures/5
