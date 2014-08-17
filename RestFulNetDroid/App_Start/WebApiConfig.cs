@@ -22,6 +22,7 @@ namespace RestFulNetDroid
             // test github integration
             // Web API routes
             config.MapHttpAttributeRoutes();
+            // route to return a random number of treasures
             config.Routes.MapHttpRoute(
                  name: "random",
                  routeTemplate: "api/treasures/random/{id}",
