@@ -199,6 +199,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CoordinatesMVCController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\randomController.cs" />
     <Compile Include="Controllers\TreasuresController.cs" />
     <Compile Include="Controllers\TreasuresMVCController.cs" />
     <Compile Include="Global.asax.cs">

@@ -22,7 +22,11 @@ namespace RestFulNetDroid
             // test github integration
             // Web API routes
             config.MapHttpAttributeRoutes();
-
+            config.Routes.MapHttpRoute(
+                 name: "random",
+                 routeTemplate: "api/treasures/random/{id}",
+                 defaults: new { controller = "random", id = RouteParameter.Optional }
+             ); 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
