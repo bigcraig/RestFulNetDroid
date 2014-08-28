@@ -202,6 +202,7 @@
     <Compile Include="Controllers\randomController.cs" />
     <Compile Include="Controllers\TreasuresController.cs" />
     <Compile Include="Controllers\TreasuresMVCController.cs" />
+    <Compile Include="DAL\Class1.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
