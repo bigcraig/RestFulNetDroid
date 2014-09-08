@@ -225,6 +225,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\text7.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -247,6 +248,8 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Content\images\Documents - Shortcut.lnk" />
+    <Content Include="images\text3" />
+    <Content Include="images\text7" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -298,7 +301,6 @@
   <ItemGroup>
     <Folder Include="api\" />
     <Folder Include="App_Data\" />
-    <Folder Include="images\" />
     <Folder Include="Views\Image\" />
   </ItemGroup>
   <ItemGroup>
