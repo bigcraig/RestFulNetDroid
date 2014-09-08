@@ -27,7 +27,8 @@ namespace RestFulNetDroid
                  name: "random",
                  routeTemplate: "api/treasures/random/{id}",
                  defaults: new { controller = "random", id = RouteParameter.Optional }
-             ); 
+             );
+       
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
