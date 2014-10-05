@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 using RestFulNetDroid.Models;
+using System.Web.Mvc;
 
 namespace RestFulNetDroid.Controllers
 {
@@ -66,7 +67,7 @@ namespace RestFulNetDroid.Controllers
 
         // PUT: api/Treasures/5
         [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutTreasure(string id, Treasure treasure)
+        public async Task<IHttpActionResult> PutTreasure(string id, [Bind(Include = "Id,Address,Name,Url")]Treasure treasure)
         {
             if (!ModelState.IsValid)
             {
@@ -101,7 +102,7 @@ namespace RestFulNetDroid.Controllers
 
         // POST: api/Treasures
         [ResponseType(typeof(Treasure))]
-        public async Task<IHttpActionResult> PostTreasure(Treasure treasure)
+        public async Task<IHttpActionResult> PostTreasure([Bind(Include = "Id,Address,Name,Url")] Treasure treasure)
         {
             if (!ModelState.IsValid)
             {
